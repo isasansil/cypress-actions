@@ -8,13 +8,13 @@ on:
 jobs:
   cypress-electron-tests:
     runs-on: ubuntu-latest
-      steps:
-        -name: Get code
-        uses: actions/checkout@v4.2.2
+    steps:
+      -name: Get code
+      uses: actions/checkout@v4.2.2
 
-        -name: Install Dependencies
-        run: npm istall
+      -name: Install Dependencies
+      run: npm istall
 
-        -name: Run E2E tests
-        run: ${{ github.event.inputs.cli }}
+      -name: Run E2E tests
+      run: ${{ github.event.inputs.cli }}
         
