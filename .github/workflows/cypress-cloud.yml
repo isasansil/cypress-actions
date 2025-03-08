@@ -46,14 +46,12 @@ jobs:
           
   cypress-e2e-firefox:
     runs-on: ubuntu-latest
-    container:
-      image: node-22.14.0-chrome-133.0.6943.126-1-ff-135.0.1-edge-133.0.3065.82-1
     steps:
       - name: Get code
         uses: actions/checkout@v4.2.2
 
       - name: Cypress run
-        uses: cypress-io/github-action@v6.5.0
+        uses: cypress-io/github-action@v3.3.0
         with:
           install-command: yarn install
           browser: firefox
