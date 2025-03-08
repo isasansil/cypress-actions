@@ -1,4 +1,4 @@
-name: Cypress Cloud
+name: Cypress Cloud Firefox
 
 on:
   workflow_dispatch:
