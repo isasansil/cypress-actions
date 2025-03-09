@@ -16,8 +16,7 @@ jobs:
         run: node runner-electron.js  
     env:
       TARGET_TOKEN_ELECTRON: ${{ secrets.TARGET_TOKEN_ELECTRON }}
-
- cypress-chrome-tests:
+  cypress-chrome-tests:
     needs: cypress-electron-tests
     runs-on: ubuntu-latest
     steps:
